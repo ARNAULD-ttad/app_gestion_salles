@@ -1,6 +1,7 @@
-import customtkinter as ctk
-import mysql.connector
+from models.salle import Salle
 
-print("✅ customtkinter importé avec succès")
-print("✅ mysql.connector importé avec succès")
-print("✅ Tout fonctionne correctement !")
+s1 = Salle("A101", "Salle informatique", "Laboratoire", 30)
+
+s1.afficher_infos()
+
+print("✅ Classe Salle fonctionne correctement !")
